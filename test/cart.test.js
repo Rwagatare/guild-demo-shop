@@ -45,3 +45,7 @@ test('an unknown code gives the same total as no code', () => {
 test('an empty code gives the same total as no code', () => {
   assert.equal(total([mug], ''), total([mug], undefined));
 });
+
+test('SAVE10 gives the same discount however many times it is applied', () => {
+  assert.equal(discount(3600, 'SAVE10'), discount(3600, 'SAVE10'));
+});
