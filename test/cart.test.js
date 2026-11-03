@@ -46,6 +46,8 @@ test('an empty code gives the same total as no code', () => {
   assert.equal(total([mug], ''), total([mug], undefined));
 });
 
-test('SAVE10 gives the same discount however many times it is applied', () => {
-  assert.equal(discount(3600, 'SAVE10'), discount(3600, 'SAVE10'));
+test('SAVE10 takes exactly 10% off subtotals of any size', () => {
+  assert.equal(discount(1000, 'SAVE10'), 100);
+  assert.equal(discount(12345, 'SAVE10'), 1235);
+  assert.equal(discount(0, 'SAVE10'), 0);
 });
