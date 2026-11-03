@@ -37,3 +37,7 @@ test('names inherited from Object.prototype are not coupons', () => {
     assert.equal(total([mug], code), 4100, code);
   }
 });
+
+test('an unknown code gives the same total as no code', () => {
+  assert.equal(total([mug], 'NOPE'), total([mug], undefined));
+});
