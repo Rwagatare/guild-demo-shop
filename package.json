@@ -1,0 +1,8 @@
+{
+  "name": "guild-demo-shop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Example shop for demonstrating Guild's review loop. Not a real shop.",
+  "scripts": { "test": "node --test" }
+}

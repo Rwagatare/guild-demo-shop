@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Shop (example)</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p class="notice">Example shop for a Guild demo. Nothing here is for sale.</p>
+    <h1>Demo Shop</h1>
+    <section id="products" aria-label="Products"></section>
+    <h2>Your cart</h2>
+    <ul id="lines"></ul>
+    <form id="coupon">
+      <label for="code">Coupon code</label>
+      <input id="code" name="code" autocomplete="off">
+      <button type="submit">Apply</button>
+    </form>
+    <dl>
+      <dt>Subtotal</dt><dd id="subtotal"></dd>
+      <dt>Discount</dt><dd id="discount"></dd>
+      <dt>Shipping</dt><dd id="shipping"></dd>
+      <dt>Total</dt><dd id="total"></dd>
+    </dl>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
